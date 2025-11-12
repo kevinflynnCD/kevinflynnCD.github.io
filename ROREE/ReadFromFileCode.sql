@@ -24,6 +24,7 @@ CREATE TABLE dbo.Items (
 GO
 
 DECLARE @json NVARCHAR(MAX);
+@json = "list.json";
 
 SELECT @json = BulkColumn
 FROM OPENROWSET(
